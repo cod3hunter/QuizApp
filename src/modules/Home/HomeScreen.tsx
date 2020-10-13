@@ -18,10 +18,10 @@ type Props = {
   navigation: HomeScreenNavigationProp;
 };
 
-const HomeScreen: React.FC<Props> = ({}) => {
+const HomeScreen: React.FC<Props> = ({navigation}) => {
   return (
     <Container>
-      <StartButton mode="contained" onPress={() => console.log('start')}>
+      <StartButton mode="contained" onPress={() => navigation.navigate('Quiz')}>
         Start Quiz
       </StartButton>
     </Container>
